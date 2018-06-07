@@ -54,7 +54,6 @@ class Likelihood:
         self.punctuation = punctuation
         self.word2vec(self.word1, self.word2)
         like_per = self.cos_dist()
-        print(like_per)
         return like_per
 
 
