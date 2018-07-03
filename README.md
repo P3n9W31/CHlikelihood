@@ -13,6 +13,7 @@ from CHlikelihood.likelihood import Likelihood
 
 a = Likelihood()
 a.likelihood('很高兴见到你','我也很高兴见到你')
-
+>>>0.8164965809277261
 ```
+
 
