@@ -16,6 +16,7 @@ class Likelihood:
             seg_list_1 = list(jieba.cut(word1, cut_all=False))
             seg_list_2 = list(jieba.cut(word2, cut_all=False))
 
+
         total_seg_list = list(set(seg_list_1 + seg_list_2))
         seg_vec_1 = []
         seg_vec_2 = []
@@ -59,4 +60,4 @@ class Likelihood:
 
 if __name__ == '__main__':
     likelihood = Likelihood()
-    likelihood.likelihood('你好', '你好呀', punctuation=True)
+    print(likelihood.likelihood('很高兴见到你', '我也很高兴见到你', punctuation=True))
